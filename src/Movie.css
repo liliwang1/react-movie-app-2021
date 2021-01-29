@@ -1,0 +1,41 @@
+.movie {
+  border-radius: 10px;
+  background-color: #fff;
+  width: 100%;
+  /* overflow: auto; */
+  /* margin: 20px; */
+  padding: 0 20px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 620px;
+}
+
+.info {
+}
+
+.title {
+}
+
+.genre {
+}
+
+.genres {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.year {
+}
+
+.summary {
+  height: 80px;
+  overflow: auto;
+  padding-bottom: 10px;
+  justify-self: end;
+}
+
+.poster {
+}

@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dddddd;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.loader {
+}
+
+.loader-text {
+  font-size: 15px;
+}
+
+.movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  column-gap: 20px;
+  row-gap: 15px;
+}
