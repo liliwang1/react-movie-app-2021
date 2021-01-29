@@ -9,9 +9,10 @@ function Movie({ id, title, summary, poster, genres, year, rating }) {
       <div className='info'>
         <h3 className='title'>{title}</h3>
         <h5 className='year'>Year: {year}</h5>
-        <div className='genres'>Genres: 
-          {genres.map((genre) => (
-            <span className='genre' key={id + genre}>
+        <div className='genres'>
+          Genres:
+          {genres.map((genre, index) => (
+            <span className='genre' key={index}>
               {genre}
             </span>
           ))}
@@ -27,7 +28,7 @@ Movie.propTypes = {
   title: PropTypes.string.isRequired,
   summary: PropTypes.string.isRequired,
   poster: PropTypes.string.isRequired,
-  genres: PropTypes.array.isRequired,
+  genres: PropTypes.arrayOf(PropTypes.string).isRequired,
   year: PropTypes.number.isRequired,
   rating: PropTypes.number.isRequired,
 };
